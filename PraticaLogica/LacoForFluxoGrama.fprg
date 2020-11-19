@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="maryu"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-11-17 04:02:50 "/>
+        <attribute name="created" value="bWFyeXU7QUNFUl9VWEE7MjAyMC0xMS0xNzsiMDM6NTY6MDQgIjsyMzYx"/>
+        <attribute name="edited" value="bWFyeXU7QUNFUl9VWEE7MjAyMC0xMS0xNzsiMDQ6MDI6NTAgIjsxOzI0NjI="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="contador, numero" type="Integer" array="False" size=""/>
+            <assign variable="numero" expression="1"/>
+            <assign variable="contador" expression="10"/>
+            <while expression="numero&lt;=contador">
+                <output expression="&quot;Contagem atual &quot; &amp; numero" newline="True"/>
+                <assign variable="numero" expression="numero+1"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

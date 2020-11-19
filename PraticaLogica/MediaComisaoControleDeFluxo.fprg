@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="maryu"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-11-17 02:55:35 "/>
+        <attribute name="created" value="bWFyeXU7QUNFUl9VWEE7MjAyMC0xMS0xNzsiMDI6NDU6NDcgIjsyMzY1"/>
+        <attribute name="edited" value="bWFyeXU7QUNFUl9VWEE7MjAyMC0xMS0xNzsiMDI6NTU6MzUgIjsxOzI0NzE="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Vendedor" type="String" array="False" size=""/>
+            <input variable="vendedor"/>
+            <declare name="jan, fev, mar, abr, media, comisao" type="Real" array="False" size=""/>
+            <input variable="jan"/>
+            <input variable="fev"/>
+            <input variable="mar"/>
+            <input variable="abr"/>
+            <assign variable="media" expression="(jan+fev+mar+abr)/4"/>
+            <if expression="media&gt;=5000">
+                <then>
+                    <assign variable="comisao" expression="(5000*3)/100"/>
+                    <output expression="comisao" newline="True"/>
+                </then>
+                <else>
+                    <assign variable="comisao" expression="(5000*10)/100"/>
+                    <output expression="comisao" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

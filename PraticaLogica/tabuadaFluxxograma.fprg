@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="maryu"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-11-17 07:07:35 "/>
+        <attribute name="created" value="bWFyeXU7QUNFUl9VWEE7MjAyMC0xMS0xNzsiMDY6NTI6MzUgIjsyMzY0"/>
+        <attribute name="edited" value="bWFyeXU7QUNFUl9VWEE7MjAyMC0xMS0xNzsiMDc6MDc6MzUgIjsxOzI0NzM="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="numero, contador, resultado" type="Integer" array="False" size=""/>
+            <output expression="&quot;Digite a tabuada que deseja praticar: &quot;" newline="True"/>
+            <input variable="numero"/>
+            <assign variable="contador" expression="0"/>
+            <while expression="contador&lt;10">
+                <assign variable="contador" expression="contador +1"/>
+                <assign variable="resultado" expression="numero*contador"/>
+                <output expression="numero &amp;&quot; x &quot;&amp; contador &amp;&quot; = &quot;&amp;resultado" newline="True"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>
